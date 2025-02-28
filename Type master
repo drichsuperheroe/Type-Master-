@@ -9,3 +9,20 @@ def typing_game():
     total_words = len(selected_words)
     
     print("\nType the following words correctly:\n")
+
+
+for word in selected_words:
+        user_input = input(f"Type this word: {word} → ")
+        
+        if user_input == word:
+            print("Fachero\n")
+        else:
+            print("Antifachavro\n")
+            mistakes += 1
+    
+    accuracy = ((total_words - mistakes) / total_words) * 100
+    
+    print(f"Acabaste vro\nMistakes: {mistakes}\nAccuracy: {accuracy:.2f}%")
+
+if name == "main":
+    typing_game()
