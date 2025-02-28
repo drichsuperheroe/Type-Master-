@@ -1,0 +1,11 @@
+Import random
+
+def typing_game():
+    words = ["apple", "banana", "cherry", "dragon", "elephant", "flamingo", "pokemon", "horizon", "island", "jungle", "kangaroo", "lighthouse", "mountain", "notebook", "octopus", "penguin", "quasar", "rainbow", "sunflower", "tornado"]
+    random.shuffle(words)  #shuffle
+    selected_words = words[:15]  #15 unqiue
+    
+    mistakes = 0
+    total_words = len(selected_words)
+    
+    print("\nType the following words correctly:\n")
